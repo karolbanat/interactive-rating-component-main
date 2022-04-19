@@ -14,6 +14,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 ### Useful resources
 
 - [MDN aria-selected](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-selected)
+- [MDN aria-checked](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-checked)
 - [MDN ARIA role radio](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Roles/radio_role)
 
 ## Author

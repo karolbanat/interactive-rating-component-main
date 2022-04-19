@@ -6,12 +6,12 @@ const endRating = document.querySelector('.thank-you__end-rating');
 
 rateBtns.forEach((btn) => {
 	btn.addEventListener('click', (e) => {
-		// removes selected class from all rating buttons
+		// removes checked class from all rating buttons
 		rateBtns.forEach((button) => {
 			button.classList.remove('rating__rate-btn--checked');
 			button.ariaChecked = 'false';
 		});
-		// and adds selected class to clicked button
+		// and adds checked class to clicked button
 		e.target.classList.add('rating__rate-btn--checked');
 		e.target.ariaChecked = 'true';
 	});
