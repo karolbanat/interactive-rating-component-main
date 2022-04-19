@@ -9,11 +9,11 @@ rateBtns.forEach((btn) => {
 		// removes selected class from all rating buttons
 		rateBtns.forEach((button) => {
 			button.classList.remove('rating__rate-btn--checked');
-			button.ariaSelected = 'false';
+			button.ariaChecked = 'false';
 		});
 		// and adds selected class to clicked button
 		e.target.classList.add('rating__rate-btn--checked');
-		e.target.ariaSelected = 'true';
+		e.target.ariaChecked = 'true';
 	});
 });
 
