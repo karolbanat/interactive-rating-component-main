@@ -1,0 +1,159 @@
+:root {
+	// colors
+	--clr-primary: hsl(25, 97%, 53%);
+	--clr-white: hsl(0, 0%, 100%);
+	--clr-light-grey: hsl(217, 12%, 63%);
+	--clr-medium-grey: hsla(216, 12%, 54%, 0.1);
+	--clr-dark-blue: hsl(213, 19%, 18%);
+	--clr-very-dark-blue: hsl(216, 12%, 8%);
+
+	// font families
+	--ff-main: 'Overpass', sans-serif;
+}
+
+// RESET
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+	font-family: var(--ff-main);
+	background-color: var(--clr-very-dark-blue);
+	color: var(--clr-white);
+}
+
+fieldset {
+	border: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+p {
+	font-size: 1.4rem;
+	line-height: 1.6;
+	color: var(--clr-light-grey);
+
+	@media (min-width: 50em) {
+		font-size: 1.5rem;
+	}
+}
+
+// MAIN CSS
+main {
+	display: grid;
+	place-content: center;
+	min-height: 100vh;
+	padding: 1.5em;
+}
+
+.btn {
+	font-family: var(--ff-main);
+	font-size: 1.4rem;
+	text-transform: uppercase;
+	border: none;
+	background: none;
+	cursor: pointer;
+	transition: background-color 0.35s ease, color 0.35s ease;
+
+	@media (min-width: 50em) {
+		font-size: 1.5rem;
+	}
+}
+
+.card {
+	padding: clamp(1.5em, 6vw, 2em);
+	width: 100%;
+	max-width: 26em;
+	background-color: var(--clr-dark-blue);
+	border-radius: clamp(1em, 5vw, 2em);
+
+	&__icon-container {
+		display: grid;
+		place-content: center;
+		width: clamp(2.5em, 8vw, 3em);
+		aspect-ratio: 1;
+		border-radius: 50%;
+		background-color: var(--clr-medium-grey);
+	}
+
+	&__title {
+		margin-top: 1em;
+		margin-bottom: 0.5em;
+		font-size: 2.6rem;
+
+		@media (min-width: 50em) {
+			margin-top: 1.25em;
+			font-size: 2.8rem;
+		}
+	}
+}
+
+.rating {
+	&__rates-group {
+		display: flex;
+		justify-content: space-between;
+		padding-block: 1.75em;
+	}
+
+	&__rate-btn {
+		width: clamp(2.75em, 11vw, 3.5em);
+		aspect-ratio: 1;
+		color: var(--clr-light-grey);
+		border-radius: 50%;
+		background-color: var(--clr-medium-grey);
+
+		&:hover {
+			background-color: var(--clr-primary);
+			color: var(--clr-white);
+		}
+
+		&--checked {
+			background-color: var(--clr-light-grey);
+			color: var(--clr-white);
+		}
+	}
+
+	&__submit-btn {
+		width: 100%;
+		padding: 1em;
+		font-weight: bold;
+		letter-spacing: 3px;
+		color: var(--clr-white);
+		background-color: var(--clr-primary);
+		border-radius: 10em;
+
+		&:hover {
+			background-color: var(--clr-white);
+			color: var(--clr-primary);
+		}
+	}
+}
+
+.thank-you {
+	display: none;
+	place-items: center;
+	text-align: center;
+	padding-block: clamp(2em, 10vw, 2.75em);
+
+	&__rating-container {
+		padding: 0.25em 1em;
+		margin-top: 2em;
+		background-color: var(--clr-medium-grey);
+		border-radius: 10em;
+	}
+
+	&__summary {
+		color: var(--clr-primary);
+	}
+}
