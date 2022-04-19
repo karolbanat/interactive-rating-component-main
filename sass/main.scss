@@ -72,6 +72,7 @@ main {
 }
 
 .card {
+	display: grid;
 	padding: clamp(1.5em, 6vw, 2em);
 	width: 100%;
 	max-width: 26em;
@@ -96,6 +97,10 @@ main {
 			margin-top: 1.25em;
 			font-size: 2.8rem;
 		}
+	}
+
+	&--hidden {
+		display: none;
 	}
 }
 
@@ -141,7 +146,6 @@ main {
 }
 
 .thank-you {
-	display: none;
 	place-items: center;
 	text-align: center;
 	padding-block: clamp(2em, 10vw, 2.75em);
