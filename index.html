@@ -26,12 +26,16 @@
         to help us improve our offering!</p>
       <form class="rating__ratings">
         <fieldset class="rating__rates-group">
-          <input type="button" role="radio" value="1" aria-label="Rating 1 out of 5"
-            class="btn rating__rate-btn rating__rate-btn--checked">
-          <input type="button" role="radio" value="2" aria-label="Rating 2 out of 5" class="btn rating__rate-btn">
-          <input type="button" role="radio" value="3" aria-label="Rating 3 out of 5" class="btn rating__rate-btn">
-          <input type="button" role="radio" value="4" aria-label="Rating 4 out of 5" class="btn rating__rate-btn">
-          <input type="button" role="radio" value="5" aria-label="Rating 5 out of 5" class="btn rating__rate-btn">
+          <input type="button" role="radio" value="1" aria-label="Rating 1 out of 5" aria-selected="false"
+            class="btn rating__rate-btn">
+          <input type="button" role="radio" value="2" aria-label="Rating 2 out of 5" aria-selected="false"
+            class="btn rating__rate-btn">
+          <input type="button" role="radio" value="3" aria-label="Rating 3 out of 5" aria-selected="false"
+            class="btn rating__rate-btn">
+          <input type="button" role="radio" value="4" aria-label="Rating 4 out of 5" aria-selected="false"
+            class="btn rating__rate-btn">
+          <input type="button" role="radio" value="5" aria-label="Rating 5 out of 5" aria-selected="false"
+            class="btn rating__rate-btn">
         </fieldset>
         <button type="submit" class="btn rating__submit-btn">Submit</button>
       </form>
@@ -40,7 +44,7 @@
     <div class="card card--hidden thank-you">
       <img src="./images/illustration-thank-you.svg" alt="">
       <div class="thank-you__rating-container">
-        <p class="thank-you__summary">You selected <span class="thank-you__end-rating">4</span> out of 5</p>
+        <p class="thank-you__summary">You selected <span class="thank-you__end-rating"></span> out of 5</p>
       </div>
       <h2 class="card__title">Thank you!</h2>
       <p>We appreciate you taking the time to give a rating. If you ever need more support,
@@ -49,30 +53,7 @@
   </main>
 
 
-  <!-- Rating state start -->
-
-  <!-- How did we do?
-
-  Please let us know how we did with your support request. All feedback is appreciated
-  to help us improve our offering!
-
-  1 2 3 4 5
-
-  Submit -->
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state start -->
-
-  <!-- You selected
-  [Add rating here] out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support,
-  don’t hesitate to get in touch! -->
-
-  <!-- Thank you state end -->
+  <script src="main.js"></script>
 </body>
 
 </html>
